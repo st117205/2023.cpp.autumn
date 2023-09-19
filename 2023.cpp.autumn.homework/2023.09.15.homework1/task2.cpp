@@ -1,10 +1,10 @@
 ﻿#include <iostream>
 
-int main() {
-	int a;
+int main(int argc, char* argv[]) {
+	int a = 0;
+	int b = 0;
 	std::cin >> a;
-	int b;
-	std::cin >> b
+	std::cin >> b;
 	std::cout << (a >= b) * a + (b > a) * b;
-	return 0;
+	return EXIT_SUCCESS;
 }
