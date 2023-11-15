@@ -25,13 +25,13 @@ int main(int, char**) {
 		}
 	}
 	for (int i = 0; i < n; ++i) {
-		if (*(a + i) == mn and flagmn == 0) {
+		if (*(a + i) == mn && flagmn == 0) {
 			*(a + i) = mx;
 			flagmn += 1;
 		}
 	}
 	for (int i = n - 1; i >= 0; --i) {
-		if (*(a + i) == mx and flagmx == 0) {
+		if (*(a + i) == mx && flagmx == 0) {
 			*(a + i) = mn;
 			flagmx += 1;
 		}
