@@ -10,10 +10,10 @@ int main(int argc, char* argv[]) {
 	std::cin >> b;
 	std::cin >> c;
 	std::cin >> d;
-	if (a == 0 and b == 0) {
+	if (a == 0 && b == 0) {
 		std::cout << "INF";
 	}
-	else if ((a != 0 and b != 0 and abs(b) % abs(a) == 0 and abs(d) % abs(c) == 0 and -b / a != -d / c) or (a != 0 and b != 0 and abs(b) % abs(a) == 0 and abs(d) % abs(c) != 0) or (a != 0 and b == 0)) {
+	else if ((a != 0 && b != 0 && abs(b) % abs(a) == 0 && abs(d) % abs(c) == 0 && -b / a != -d / c) || (a != 0 && b != 0 && abs(b) % abs(a) == 0 && abs(d) % abs(c) != 0) || (a != 0 && b == 0)) {
 		std::cout << -b / a;
 	}
 	else {
