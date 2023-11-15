@@ -7,7 +7,7 @@ int main(int argc, char* argv[]) {
 	std::cin >> a;
 	std::cin >> b;
 	std::cin >> n;
-	if ((n < a < b) and (a - b % a) == n) {
+	if ((n < a < b) && (a - b % a) == n) {
 		int k = b / a + 1;
 		while (k > 0) {
 			std::cout << ">A" << std::endl;
@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 			k -= 1;
 		}
 	}
-	if ((n < b < a) and (b - a % b) == n) {
+	if ((n < b < a) && (b - a % b) == n) {
 		int k = a / b + 1;
 		while (k > 0) {
 			std::cout << ">B" << std::endl;
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 			k -= 1;
 		}
 	}
-	if ((n > a or n > b) or (a % b == 0 and a != b and a != n) or (a != b and a != n and b % a == 0)) {
+	if ((n > a || n > b) || (a % b == 0 && a != b && a != n) || (a != b && a != n && b % a == 0)) {
 		std::cout << "Impossible";
 	}
 	if (n == a) {
