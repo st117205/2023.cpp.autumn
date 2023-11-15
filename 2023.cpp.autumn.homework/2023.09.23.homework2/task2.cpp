@@ -5,7 +5,7 @@ int main(int argc, char* argv[]) {
 	int student = 0;
 	std::cin >> answer;
 	std::cin >> student;
-	if ((answer == 1 and student == 1) or (answer != 1 and student != 1)) {
+	if ((answer == 1 && student == 1) || (answer != 1 && student != 1)) {
 		std::cout << "YES";
 	}
 	else {
