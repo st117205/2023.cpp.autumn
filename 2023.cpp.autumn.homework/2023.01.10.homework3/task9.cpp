@@ -6,7 +6,7 @@ int main(int argc, char* argv[]) {
 	std::cin >> a;
 	std::cin >> b;
 	while (a > b) {
-		if (a % 2 == 0 and a / b > 1) {
+		if (a % 2 == 0 && a / b > 1) {
 			a = a / 2;
 			std::cout << ":2" << std::endl;
 		}
